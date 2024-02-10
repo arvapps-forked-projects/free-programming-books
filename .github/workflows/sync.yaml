@@ -19,10 +19,10 @@ env:
   # Optional toggle to spawn time logs (keeps action active) 
   SPAWN_LOGS: "false" # "true" or "false"
 
-# This runs every hour
+# This runs at 05:25, on day 10 of the month
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '25 5 10 * *'
   # Allows manual workflow run (must in default branch to work)
   workflow_dispatch:
 
